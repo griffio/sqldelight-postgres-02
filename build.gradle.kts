@@ -41,6 +41,7 @@ sqldelight {
     }
 }
 
+// liquibase plugin is old groovy dsl
 liquibase {
     activities {
         register("changelogs") {
