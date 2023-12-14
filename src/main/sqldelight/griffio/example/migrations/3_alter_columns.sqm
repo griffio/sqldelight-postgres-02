@@ -1,0 +1,6 @@
+-- liquibase formatted sql
+-- changeset liquibase:3
+ALTER TABLE contact ALTER COLUMN contact_id SET DATA TYPE BIGINT; -- shows longer form but can use TYPE BIGINT
+ALTER TABLE contact ALTER COLUMN email SET NOT NULL;
+ALTER TABLE address ALTER COLUMN full_name SET NOT NULL;
+
