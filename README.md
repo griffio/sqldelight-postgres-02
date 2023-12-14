@@ -1,4 +1,6 @@
-# SqlDelight 2.1.x Postgresql
+# SqlDelight 2.1.x Postgresql migrations with Liquibase
+
+see https://github.com/griffio/sqldelight-postgres-01 for flyway migrations
 
 https://github.com/cashapp/sqldelight
 
