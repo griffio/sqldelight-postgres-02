@@ -1,0 +1,15 @@
+select:
+SELECT * FROM contact
+WHERE contact_id = ?;
+
+insert:
+INSERT INTO contact (
+    address_id,
+    full_name,
+    job_title,
+    company,
+    email,
+    phone_number,
+    is_active,
+    created_at)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING *;

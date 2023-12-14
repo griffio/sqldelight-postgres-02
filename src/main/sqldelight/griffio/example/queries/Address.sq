@@ -1,0 +1,7 @@
+select:
+SELECT *
+FROM address
+WHERE address_id = ?;
+
+insert:
+INSERT INTO address (address_1, address_2, postal_code, town, city, country_code) VALUES (?, ?, ?, ?, ?, ?) RETURNING *;

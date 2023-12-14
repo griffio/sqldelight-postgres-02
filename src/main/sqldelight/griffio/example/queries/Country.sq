@@ -1,0 +1,6 @@
+select:
+SELECT * FROM country
+WHERE code = ?;
+
+insert:
+INSERT INTO country VALUES ?;
