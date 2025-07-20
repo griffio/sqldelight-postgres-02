@@ -1,7 +1,6 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
         mavenCentral()
     }
 }
@@ -15,8 +14,8 @@ rootProject.name = "sqldelight-postgres-02"
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
-            val vSqlDelight = "2.1.0-SNAPSHOT"
-            plugin("kotlin", "org.jetbrains.kotlin.jvm").version("1.9.20")
+            val vSqlDelight = "2.1.0"
+            plugin("kotlin", "org.jetbrains.kotlin.jvm").version("2.0.20")
             plugin("sqldelight", "app.cash.sqldelight").version(vSqlDelight)
             plugin("liquibase", "org.liquibase.gradle").version("2.2.0")
             library("sqldelight-jdbc-driver", "app.cash.sqldelight:jdbc-driver:$vSqlDelight")
